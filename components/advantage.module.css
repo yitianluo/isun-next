@@ -1,0 +1,35 @@
+.advantage {
+    padding: 4vw 8vw 4vw;
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+
+.character {
+    display: inline-block;
+    position: relative;
+    width: 24vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.character img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.character h1{
+    font-family: var(--Playfair);
+    font-size: 3.5vw;
+}
+
+.character p {
+    text-align: left;
+    font-family: var(--Source-Sans);
+    font-size: 1.5vw;
+}
+
+.character p span{
+    font-weight: bold;
+    color: var(--Main-Red);
+}

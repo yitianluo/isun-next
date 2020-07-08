@@ -1,0 +1,45 @@
+.navbar {
+    padding: 0 1vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: var(--Main-White);
+    z-index: 1;
+}
+
+.logoDiv{
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    width: 4rem;
+}
+
+.navbar h1{
+    margin: 8px 0 8px 1vmax;
+    font-family: var(--Playfair);
+    font-style: italic;
+    font-size:2.5rem;
+    color: var(--Main-Green);
+}
+
+.menuDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menuDiv p {
+    margin-left: 1vmax;
+    font-family: var(--Playfair);
+    color: grey;
+    font-size: 1.5vw;
+}
+
+.menuDiv p:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,66 @@
+.flashcard{
+    /* padding: 4vw 8vw 4vw; */
+    background-color: var(--Main-Green);
+    color: var(--Main-White);
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    height: 36rem;
+}
+
+.card{
+    /* padding: 0 10vw; */
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    
+}
+
+.card2{
+    left: 100vw;
+}
+
+.card h1{
+    font-size: 5vw;
+    font-weight: 800;
+    font-family: var(--Source-Sans);
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name img{
+    border-radius: 50%;
+    display: inline-block;
+    width: 15vw;
+}
+
+.name p{
+    display: inline-block;
+    font-family: var(--Source-Sans);
+    font-size: 2vw;
+    font-weight: 600;
+    margin-left: 1.5vw;
+    font-style: italic;
+}
+
+.left {
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 10rem;
+    z-index: 2;
+}
+
+.right {
+    background-color: red;
+    position: absolute;
+    right:0;
+    top: 10rem;
+    z-index: 2;
+}
