@@ -5,7 +5,6 @@ import managersData from "../public/manager.js";
 function FlashCard(){
 
     const managers = [managersData[managersData.length-1],...managersData,managersData[0]];
-    // const managers = managersData;
 
     const [current,setCurrent] = useState(1);
     const [jump,setJump] = useState(false);
@@ -24,14 +23,14 @@ function FlashCard(){
 
     useEffect(() => {
         if(current === 4) {
-            const id = setTimeout(() => setCurrent(1), 2000);
+            const id = setTimeout(() => setCurrent(1), 800);
             return () => {
                 setJump(true);
                 clearTimeout(id);
                 }
         } 
         if (current===0){
-            const id = setTimeout(() => setCurrent(3), 2000);
+            const id = setTimeout(() => setCurrent(3), 800);
             return () => {
                 setJump(true);
                 clearTimeout(id);
@@ -39,9 +38,17 @@ function FlashCard(){
         }
       },[current]);
 
+      useEffect(() => {
+        const auto = setTimeout(() => shiftRight(), 4000);
+        return () => {
+            clearTimeout(auto);
+        }
+      }
+      )
+
     const divStyle = {
         left: (1-current)*100 + "vw",
-        transition: jump ? "none":"2s",
+        transition: jump ? "none":"800ms",
         position:"absolute",
         top:"0",
         width:"100%"
