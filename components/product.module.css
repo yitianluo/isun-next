@@ -1,0 +1,42 @@
+.product {
+    display: inline-block;
+    width: 26vw;
+    height: 20vw;
+    margin: 0.5vw 2vw;
+    position: relative;
+    
+}
+
+.product:hover {
+    cursor: pointer;
+}
+
+.product img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.product h1 {
+    color: var(--Main-White);
+    font-family: var(--Source-Sans);
+    font-size: 4vw; 
+}
+
+
+.mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    /* z-index: 2; */
+    border-radius: 1rem;
+}
+

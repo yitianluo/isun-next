@@ -14,13 +14,14 @@
 }
 
 .character img {
-    width: 4rem;
-    height: 4rem;
+    width: 4vw;
+    height: 4vw;
 }
 
 .character h1{
     font-family: var(--Playfair);
     font-size: 3.5vw;
+    margin: 2vw 0;
 }
 
 .character p {
@@ -32,4 +33,24 @@
 .character p span{
     font-weight: bold;
     color: var(--Main-Red);
+}
+
+@media (max-width:1028px){
+
+    .advantage{
+        display: inline-block;
+    }
+    .character{
+        width: 80vw;
+    }
+
+    .character img{
+        margin-top: 2vw;
+    }
+
+    .character h1{
+        font-family: var(--Playfair);
+        font-size: 3.5vw;
+        margin-top: 0;
+    }
 }

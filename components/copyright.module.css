@@ -1,0 +1,22 @@
+.copyright {
+    background-color: var(--Main-White);
+    text-align: center;
+    padding:2vw;
+}
+
+.imgDiv {
+    padding: 0 40vw;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgDiv img{
+    width:2vw;
+}
+
+.copyright p{
+    font-family: var(--Source-Sans);
+    letter-spacing: 2px;
+    margin: 1vw 0;
+}

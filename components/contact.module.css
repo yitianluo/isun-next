@@ -1,0 +1,97 @@
+.contact {
+    background-color: var(--Main-Green);
+    padding: 2vw 10vw;
+    display: flex;
+    align-items: flex-start;
+}
+
+.formDiv {
+    display: inline-block;
+    width: 36vw;
+    border: 1px solid white;
+    padding: 1vw 0vw 1vw 2vw;   
+    font-family: var(--Source-Sans);
+}
+
+.formDiv h1{
+    color: var(--Main-White);
+    font-family: var(--Great-Vibes);
+    font-size: 4rem;
+    margin: 0;
+}
+
+.half {
+    width: 50%;
+    display: inline-block;
+    margin-top: 1vw;
+}
+
+.half input{
+    display: block;
+    width: 80%;
+    height: 2rem;
+    border: 0;
+    margin-top: 4px;
+    padding-left: 8px;
+}
+
+.full {
+    width: 100%;
+    display: inline-block;
+    margin-top: 1vw;
+}
+
+.full input{
+    display: block;
+    width: 90%;
+    height: 2rem;
+    border: 0;
+    margin-top: 4px;
+    padding-left: 8px;
+}
+
+.full textarea{
+    display: block;
+    width: 90%;
+    height: 4rem;
+    border: 0;
+    margin-top: 4px;
+    padding-left: 8px;
+}
+
+.formDiv button{
+    /* border: 0; */
+    /* background-color: var(--Main-White); */
+    font-family: var(--Great-Vibes);
+    border: 2px solid var(--Main-White);
+    background-color: var(--Main-Green);
+    color: white;
+    margin-top: 2vw;
+    height: 2.5rem;
+    width: 10vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.formDiv button:hover {
+    cursor: pointer;
+}
+
+@media (max-width:1028px){
+    .contact{
+        display: inline-block;
+        width: 80vw;
+    }
+
+    .formDiv{
+        width: 76vw;
+        padding: 1vw 0vw 1vw 4vw; 
+    }
+
+    .formDiv button{
+        width: 30vw;
+    }
+
+    
+}

@@ -3,6 +3,9 @@ import NavBar from "../components/navbar";
 import Landing from "../components/landing";
 import Advantage from "../components/advantage";
 import FlashCard from "../components/flashcard";
+import Products from "../components/products";
+import Contact from "../components/contact";
+import Copyright from "../components/copyright";
 
 export default function Home() {
   return (
@@ -11,6 +14,7 @@ export default function Home() {
         <title>Anhui Isun</title>
         <link rel="icon" href="/logo.png" />
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet"></link>
+        
       </Head>
 
       <main>
@@ -18,10 +22,13 @@ export default function Home() {
         <Landing />
         <Advantage />
         <FlashCard />
+        <Products />
+        <Contact />
+        <Copyright />
       </main>
 
       <footer>
-  
+         
       </footer>
 
      

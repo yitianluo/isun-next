@@ -1,0 +1,14 @@
+.products {
+    background-color: var(--Main-White);
+    text-align: center;
+    padding-bottom: 2vw;
+}
+
+.products h1{
+    font-family: var(--Playfair);
+    text-align: center;
+    color: var(--Main-Red);
+    font-size:6vw;
+    margin: 2vw 0;
+}
+

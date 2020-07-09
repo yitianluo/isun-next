@@ -76,11 +76,15 @@ function FlashCard(){
 
     return(
         <div className={styles.flashcard}>
-            <div onClick={shiftLeft} className={styles.left}> left </div>
+            <div onClick={shiftLeft} className={styles.left}>
+                <img src="/icons/chevron-left-solid.svg"></img>
+            </div>
             <div style={divStyle}> 
                 {managers.map(renderCard)}
             </div>
-            <div onClick={shiftRight} className={styles.right}> right </div>
+            <div onClick={shiftRight} className={styles.right}> 
+                 <img src="/icons/chevron-right-solid.svg"></img>
+            </div>
         </div>
     )
 }
