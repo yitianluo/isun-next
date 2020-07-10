@@ -43,3 +43,9 @@
 .menuDiv p:hover{
     cursor: pointer;
 }
+
+@media (max-width:1028px){
+    .menuDiv p{
+        font-size:3vw;
+    }
+}

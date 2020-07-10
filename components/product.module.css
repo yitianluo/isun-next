@@ -20,13 +20,6 @@
     border-radius: 1rem;
 }
 
-.product h1 {
-    color: var(--Main-White);
-    font-family: var(--Source-Sans);
-    font-size: 4vw; 
-}
-
-
 .mask {
     display: flex;
     justify-content: center;
@@ -38,5 +31,11 @@
     opacity: 0.7;
     /* z-index: 2; */
     border-radius: 1rem;
+}
+
+.mask h2 {
+    color: var(--Main-White);
+    font-family: var(--Source-Sans);
+    font-size: 4vw; 
 }
 
