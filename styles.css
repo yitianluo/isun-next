@@ -1,7 +1,17 @@
+@font-face{
+    font-family: "ChineseFont";
+    src:url('/AaKaiTi-2.ttf')  format('truetype');
+}
+
+@font-face{
+    font-family: "ChineseTitle";
+    src:url("/RuiZiYunZiKuXingKaiGB-2.ttf") format("truetype");
+}
+
 :root {
     --Great-Vibes: 'Great Vibes', cursive;
     --Playfair: 'Playfair Display', serif;
-    --Source-Sans: 'Source Sans Pro', sans-serif;
+    --Source-Sans: 'Source Sans Pro', sans-serif; 
     --Main-Green:#95e1d3;
     --Main-Red:#f38181;
     --Main-White:white;

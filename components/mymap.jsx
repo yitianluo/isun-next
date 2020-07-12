@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import {Map,Marker} from "react-amap";
 
 
-function MyMap(){
+function MyMap(props){
 
     var pos = { longitude: 117.270705 , latitude: 31.86183 };
 
@@ -19,7 +19,7 @@ function MyMap(){
             <div className={styles.infoDiv}>
                 <div className={styles.info}>
                     <img src="/icons/location-solid.svg"></img>
-                    <p>NO.279 Anqing Road, Hefei, Anhui, China</p>
+                    {props.isEn?<p>NO.279 Anqing Road, Hefei, Anhui, China</p>:<p>安徽省合肥市安庆路279号中环汇景大厦</p>}
                 </div>
                 <div className={styles.info}>
                     <img src="/icons/phone-solid.svg"></img>

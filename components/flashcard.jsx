@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import styles from "./flashcard.module.css";
 import managersData from "../public/manager.js";
 
-function FlashCard(){
+function FlashCard(props){
 
     const managers = [managersData[managersData.length-1],...managersData,managersData[0]];
 
@@ -54,8 +54,6 @@ function FlashCard(){
         width:"100%"
     }
 
-    console.log(divStyle);
-
     function renderCard(manager,index){
         const leftPo = 100*(index-1) + "vw";
         const leftDistance = {
@@ -65,10 +63,10 @@ function FlashCard(){
             <div className={`${styles.card}`} 
             style={leftDistance} 
             key={index}>
-                 <h1>{manager.quote}</h1>
+                 {props.isEn? <h1>{manager.quote}</h1> : <h1 style={{fontFamily:"ChineseTitle",marginTop:"10vw"}}>{manager.quoteCN}</h1> }
                  <div className={styles.name}>
                      <img src={manager.image} onClick={shiftLeft}></img>
-                     <p>{manager.name}</p>
+                     {props.isEn? <p>{manager.name}</p> :<p>{manager.nameCN}</p>}
                  </div>
              </div>
         )

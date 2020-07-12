@@ -20,3 +20,10 @@
     letter-spacing: 2px;
     margin: 1vw 0;
 }
+
+
+@media (max-width:1028px){
+    .imgDiv{
+        padding: 0 35vw;
+    }
+}

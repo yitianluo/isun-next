@@ -1,7 +1,6 @@
 .navbar {
     padding: 0 1vmax;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: fixed;
     left: 0;
@@ -9,11 +8,35 @@
     top: 0;
     background-color: var(--Main-White);
     z-index: 1;
+    height: 5rem;
 }
 
 .logoDiv{
     display: flex;
     align-items: center;
+    width: 60vw;
+}
+
+.lanChoice{
+    font-family: "ChineseFont";
+    display: inline-block;
+    background-color: var(--Main-Green);
+    border: 1px solid var(--Main-Green);
+    width: 10vw;
+}
+
+.language {
+    background-color: var(--Main-Green);
+    color: var(--Main-White);
+    padding: 0.5vw 0vw;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.language:hover{
+    cursor: pointer;
 }
 
 .navbar img {
@@ -23,14 +46,14 @@
 .navbar h1{
     margin: 8px 0 8px 1vmax;
     font-family: var(--Playfair);
-    font-style: italic;
-    font-size:2.5rem;
+    font-size:2.5vw;
     color: var(--Main-Green);
 }
 
 .menuDiv {
     display: flex;
     justify-content: space-evenly;
+    width: 30vw;
 }
 
 .menuDiv p {
@@ -44,8 +67,95 @@
     cursor: pointer;
 }
 
+.menuDiv a {
+    color: grey;
+}
+
+.menuDiv a:link {
+    text-decoration: none;
+  }
+  
+.menuDiv a:visited {
+    text-decoration: none;
+  }
+  
+.menuDiv a:hover {
+    text-decoration: none;
+  }
+  
+.menuDiv a:active {
+    text-decoration: none;
+  }
+
+.mobileMenu{
+    visibility: hidden;
+}
+
 @media (max-width:1028px){
-    .menuDiv p{
-        font-size:3vw;
+    
+    .navbar h1{
+        font-size: 5vw;
+    }
+
+    .menuDiv {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .mobileMenu{
+        width: 10vw;
+        visibility: visible;
+        display: flex;
+        align-items: center; 
+        justify-content: flex-end;  
+        justify-items: flex-end;
+        margin-right: 5vw;
+        position: relative;
+    }
+
+    .mobileMenu:hover{
+        cursor: pointer;
+    }
+
+    .mobileMenu svg{
+        width: 3vw;
+    }
+
+    .spanMenu {
+        position: absolute;
+        top: 6vw;
+        right: 0vw;
+        width: 15vw;
+        z-index: 1;
+        padding: 0 4vw;
+        background-color: var(--Main-Green);
+        color:var(--Main-White);
+        font-size: 2vw;
+        font-family: var(--Playfair);
+        font-weight: bold;
+    }
+
+    .spanMenu a {
+        color:var(--Main-White);
+    }
+    
+    .spanMenu a:link {
+        text-decoration: none;
+      }
+      
+    .spanMenu a:visited {
+        text-decoration: none;
+      }
+      
+    .spanMenu a:hover {
+        text-decoration: none;
+      }
+      
+    .spanMenu a:active {
+        text-decoration: none;
+      }
+
+    .lanChoice{
+        width: 20vw;
     }
 }

@@ -14,7 +14,7 @@ function Product(props){
             <img src={props.image}></img>
             <div className={styles.mask} 
                 style={ {visibility : isHover? "visible":"hidden"} }>
-                <h2>{props.name}</h2>
+                {props.isEn? <h2>{props.name}</h2> : <h2>{props.nameCN}</h2>}
             </div>
         </div>
     )
