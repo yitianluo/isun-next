@@ -5,7 +5,8 @@
 }
 
 .imgDiv {
-    padding: 0 40vw;
+    width: 20%;
+    padding-left: 40%;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -24,6 +25,13 @@
 
 @media (max-width:1028px){
     .imgDiv{
-        padding: 0 35vw;
+        width: 30%;
+        padding-left: 35%;
+    }
+
+    .copyright p{
+        font-family: var(--Source-Sans);
+        letter-spacing: 1px;
+        margin: 1vw 0;
     }
 }
