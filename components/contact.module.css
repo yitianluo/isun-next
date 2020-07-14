@@ -33,6 +33,7 @@
     border: 0;
     margin-top: 4px;
     padding-left: 8px;
+    font-family: var(--Source-Sans);
 }
 
 .full {
@@ -48,6 +49,7 @@
     border: 0;
     margin-top: 4px;
     padding-left: 8px;
+    font-family: var(--Source-Sans);
 }
 
 .full textarea{
@@ -57,6 +59,7 @@
     border: 0;
     margin-top: 4px;
     padding-left: 8px;
+    font-family: var(--Source-Sans);
 }
 
 .formDiv button{

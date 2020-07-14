@@ -11,13 +11,13 @@ function FlashCard(props){
 
     function shiftLeft(){
         setJump(false);
-        console.log("shift left");
+        // console.log("shift left");
         setCurrent(prev => (prev+managers.length-1)%managers.length); 
     }
 
     function shiftRight(){
         setJump(false);
-        console.log("shift right");
+        // console.log("shift right");
         setCurrent(prev => (prev+1)%managers.length);  
     }
 
