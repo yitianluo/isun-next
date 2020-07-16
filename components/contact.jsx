@@ -26,7 +26,7 @@ function Contact(props){
             date : date
         };
 
-        axios.post("https://isun-next.vercel.app/api/messages",data).then(function(response){
+        axios.post("/api/messages",data).then(function(response){
             console.log(response);
         }).catch(function(error){
             console.log("error");
