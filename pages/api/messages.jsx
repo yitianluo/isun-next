@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect(process.env.DB_HOST, {
+mongoose.connect("mongodb+srv://admin-luo:iloveisun@isun-database.ehsi5.mongodb.net/isunDB?retryWrites=true&w=majority", {
         useNewUrlParser: true,
         useUnifiedTopology: true
     });
