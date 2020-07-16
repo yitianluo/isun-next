@@ -1,12 +1,11 @@
 import React from "react";
 import axios from "axios";
+import connectDB from "../lib/mongo-connect";
 const bodyParser = require('body-parser');
 
-function Admin(){   
+function Admin({messages}){   
 
     function showMessage(message,index){
-
-        console.log(message);
         
         return(
         <div key={index}>
@@ -29,15 +28,9 @@ function Admin(){
 
 export async function getStaticProps(){
 
-    const messages = await axios.get(process.env.VERCEL_URL+"/api/messages").then(function(response){
-        
-        return response.data;
-    }).catch(function(error){
-        return error;
-    });
-
-    console.log(messages);
-
+    const res = await connectDB();
+    const messages = JSON.parse(JSON.stringify(res));
+    
     return {
         props:{
             messages
