@@ -29,7 +29,7 @@ function Admin({messages}){
 
 export async function getStaticProps(){
 
-    const messages = await axios.get("https://isun-next-25bwj4hh4.vercel.app/api/messages").then(function(response){
+    const messages = await axios.get(process.env.VERCEL_URL+"/api/messages").then(function(response){
         
         return response.data;
     }).catch(function(error){
