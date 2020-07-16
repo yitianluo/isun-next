@@ -1,9 +1,12 @@
 import React from "react";
 import axios from "axios";
+const bodyParser = require('body-parser');
 
 function Admin({messages}){   
 
     function showMessage(message,index){
+
+        console.log(message);
         
         return(
         <div key={index}>
@@ -15,8 +18,7 @@ function Admin({messages}){
             <p>{message.address}</p>                
             <p>{message.message}</p>                
         </div>)
-    }    
-
+    }
     return(
         <div>
             <h1>Here's the data from database.</h1>
@@ -26,16 +28,22 @@ function Admin({messages}){
 }
 
 export async function getStaticProps(){
-    
-    const messages = await axios.get("http://localhost:4000/").then(res => {
-      return res.data;
+
+    const messages = await axios.get("http://localhost:3000/api/messages").then(function(response){
+        
+        return response.data;
+    }).catch(function(error){
+        return error;
     });
+
+    console.log(messages);
 
     return {
         props:{
-            messages,
-        },
+            messages
+        }
     }
+    
 }
 
 export default Admin;

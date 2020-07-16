@@ -26,7 +26,7 @@ function Contact(props){
             date : date
         };
 
-        axios.post("http://localhost:4000/",data).then(function(response){
+        axios.post("/api/messages",data).then(function(response){
             console.log(response);
         }).catch(function(error){
             console.log("error");
