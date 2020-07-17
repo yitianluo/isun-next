@@ -26,7 +26,7 @@ function Admin({messages}){
     )
 }
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
 
     const res = await connectDB();
     const messages = JSON.parse(JSON.stringify(res));
