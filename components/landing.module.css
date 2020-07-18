@@ -48,6 +48,6 @@
 
 .text p{
     font-family: var(--Source-Sans);
-    font-size: 1rem;
+    font-size: 2vw;
     font-weight: 400;
 }
