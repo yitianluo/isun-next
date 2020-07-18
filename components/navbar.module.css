@@ -93,11 +93,11 @@
 @media (max-width:1028px){
 
     .logoDiv img{
-        width: 3.5rem;
+        width: 8vw;
     }
     
     .navbar h1{
-        font-size:2.5rem;
+        font-size:6vw;
     }
 
     .menuDiv {
@@ -121,7 +121,7 @@
     }
 
     .mobileMenu svg{
-        width: 2rem;
+        width: 6vw;
     }
 
     .spanMenu {
