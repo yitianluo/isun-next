@@ -25,7 +25,17 @@ mongoose.connect("mongodb+srv://"+process.env.DB_HOST+"@isun-database.ehsi5.mong
 
 export default (req,res) => {
 
-    if(req.method === "POST"){
+    if(req.method === "GET"){
+        Message.find(function(err,result){
+            if (err) {
+              res.send(err);
+            } else {
+              res.send(result);
+            }
+          });
+    }
+
+    else if(req.method === "POST"){
 
         const data = req.body;
         const message = new Message({

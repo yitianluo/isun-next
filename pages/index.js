@@ -23,7 +23,7 @@ export default function Home() {
   function chooseCh(){
     var root = $(":root");
     root.css("--Great-Vibes","ChineseTitle");
-    root.css("--Playfair","serif");
+    root.css("--Playfair","ChineseFont");
     root.css("--Source-Sans","ChineseFont");
     setIsEn(false);
   }

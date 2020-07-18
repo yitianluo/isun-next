@@ -1,0 +1,107 @@
+.login{
+    background-color:var(--Main-Green);
+    color: var(--Main-White);
+    font-family: var(--Playfair);
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+}
+
+.row input{
+    height: 2rem;
+    margin-left: 3vw;
+    font-size: 1.5rem;
+    width: 10rem;
+}
+
+.login button {
+    padding: 0.5rem 1rem;
+    font-family: var(--Playfair);
+    font-size: 1rem;
+    background-color: white;
+    color: var(--Main-Green);
+    border: 0;
+    margin-top: 2rem;
+}
+
+.login button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.messages {
+    padding: 3vw 15vw;
+    background-color: var(--Main-White);
+    text-align: center;
+    color: black;
+    
+}
+
+.messages h1{
+    font-weight: 800;
+    font-family: var(--Playfair);
+    font-size: 5vw;
+}
+
+.message{
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message h1{
+    font-family: var(--Source-Sans);
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.message p{
+    font-family: var(--Source-Sans);
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.block {
+    display: flex;
+    width: 33%;
+    flex-wrap: wrap;
+}
+
+.block label{
+    display: block;
+    width: 100%;
+    font-family: var(--Playfair);
+    font-size: 2vw;
+    color: var(--Main-Green);
+}
+
+.block h1{
+    width: 100%;
+    margin: 0;
+}
+
+.block p{
+    width: 100%;
+    margin: 0;
+}
+
+.text {
+    width: 100%;
+}
+
+.text label{
+    display: block;
+    width: 100%;
+    font-family: var(--Playfair);
+    font-size: 2vw;
+    color: var(--Main-Green);
+}

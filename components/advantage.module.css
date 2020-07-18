@@ -46,11 +46,17 @@
 
     .character img{
         margin-top: 2vw;
+        width: 2rem;
+        height: 2rem;
     }
 
     .character h1{
         font-family: var(--Playfair);
-        font-size: 3.5vw;
+        font-size: 2rem;
         margin-top: 0;
+    }
+
+    .character p{
+        font-size: 1rem;
     }
 }

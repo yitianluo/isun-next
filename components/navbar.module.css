@@ -31,7 +31,7 @@
     display: inline-block;
     width: 50%;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .language:hover{
@@ -91,9 +91,13 @@
 }
 
 @media (max-width:1028px){
+
+    .logoDiv img{
+        width: 3.5rem;
+    }
     
     .navbar h1{
-        font-size: 5vw;
+        font-size:2.5rem;
     }
 
     .menuDiv {
@@ -117,14 +121,14 @@
     }
 
     .mobileMenu svg{
-        width: 3vw;
+        width: 2rem;
     }
 
     .spanMenu {
         position: absolute;
-        top: 6vw;
+        top: 3rem;
         right: 0vw;
-        width: 20vw;
+        width: 25vw;
         z-index: 1;
         padding: 0 4vw;
         background-color: var(--Main-Green);
